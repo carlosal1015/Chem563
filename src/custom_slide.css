@@ -1,0 +1,35 @@
+.reveal h1 { font-size: 1.7em; }
+
+.reveal h2 { font-size: 1.5em; }
+
+/* Try to align the slide to the top of the page */
+.slide_inner {
+    position: absolute !important;
+    top: 8% !important;
+}
+    .slide_inner code, .slide_inner pre {
+        max-width: 110%;
+    }
+        .slide_inner li code, .slide_inner li pre {
+            max-width: 80%;
+        }
+
+
+
+@media screen and (max-width: 4000px), (max-height: 6000px) {
+    .reveal .slides {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 900px), (max-height: 600px) {
+    .reveal .slides {
+        font-size: 0.66em;
+    }
+}
+
+@media screen and (max-width: 700px), (max-height: 400px) {
+    .reveal .slides {
+        font-size: 0.66em;
+    }
+}
