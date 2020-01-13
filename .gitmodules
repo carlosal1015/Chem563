@@ -1,0 +1,3 @@
+[submodule "00_Intro2Py/py4sci"]
+	path = 00_Intro2Py/py4sci
+	url = https://github.com/astrofrog/py4sci.git

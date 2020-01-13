@@ -11,6 +11,6 @@ This unit will teach:
 #### 01_viz-cookbook.ipynb 
 	-  Some handy matplotlib snippets for visualization, widgets and animation  
 
-#### 02_python_for_scientists/ 
+#### python for scientists 
 	- A solid 5-day bootcmap intorducing python for scientificially minded people.  
 
