@@ -12,5 +12,5 @@ This unit will teach:
 	-  Some handy matplotlib snippets for visualization, widgets and animation  
 
 #### 02_python_for_scientists/ 
-	- A solid 5-day bootcmap  for teaching you basiscs of python: python_for_scientists/
+	- A solid 5-day bootcmap intorducing python for scientificially minded people.  
 
