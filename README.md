@@ -17,7 +17,9 @@ This repository contains computational notebooks for the course Chem563 Intro to
 
 ### 1. How to run notebooks?
 
-We will use JupyterHub at ISU with environment and all relevant python package conveniently pre-installed for us. <br>**Login [here](https://www.hpc.iastate.edu/guides/classroom-hpc-cluster/jupyterhub) and start running notebooks.** Alternatively you have the following options:
+We will use JupyterHub at ISU with environment and all relevant python package conveniently pre-installed for us. <br>**Login [here](https://www.hpc.iastate.edu/guides/classroom-hpc-cluster/jupyterhub) and start running notebooks.** From a terminal you can login using `yourname` NetID:  ssh yourname@hpc-class.its.iastate.edu 
+
+Alternatively you have the following options:
 
 - Launch the binder and run the notebooks in the cloud (change won't be saved unless you download notebooks).
 
