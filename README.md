@@ -44,4 +44,6 @@ To update your local copy do the following:
 $ cd  Chem563/
 $ git pull
 ```
-If you want to save change to your notebooks/files make sure to **rename them**  to avoid overwritting. 
+If you want to save change to your notebooks/files make sure to **rename them**  to avoid overwritting.
+
+### 
