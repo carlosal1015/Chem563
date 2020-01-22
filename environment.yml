@@ -7,3 +7,8 @@ dependencies:
   - pandas
   - seaborn
   - scipy
+  - pip
+  - ipydatawidgets
+  - ipykernel
+  - pip:
+    - matplotlib-venn
