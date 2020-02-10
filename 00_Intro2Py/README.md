@@ -6,11 +6,13 @@ This unit will teach:
 3. How to use scipy for statistcal and applied math tasks.
 
 #### 00_python-intro.ipyn 
-	- everything you need to know inside one jupyter notebook
+	- Everything you need to know inside one jupyter notebook
 
-#### 01_viz-cookbook.ipynb 
-	-  Some handy matplotlib snippets for visualization, widgets and animation  
+#### 01_Sciviz-cookbook.ipynb 
+	-  Some handy matplotlib snippets for visualization, widgets and animation.  
 
-#### [python for scientists](https://mybinder.org/repo/astrofrog/py4sci) 
-	- A solid 5-day bootcmap intorducing python for scientificially minded people.  
+#### 02_numpy_basics.ipynb
 
+#### 03_scipy_basics.ipynb
+
+#### 04_matplotlib_basics.ipynb
