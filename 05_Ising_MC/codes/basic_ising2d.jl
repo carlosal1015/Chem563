@@ -43,8 +43,6 @@ function ising2d_mcmc(N,J,B,T; n_steps = 10^7, out_freq = 5000)
 
 end
 
-
-
 ######## Thermo output ###########
 
 # Compute M

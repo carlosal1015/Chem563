@@ -14,7 +14,6 @@ def ising2d_mcmc(N,J,B,T, n_steps=10**7, out_freq = 10**4):
     confs       = []
     M, E        = [], []
     
-    
     for step in range(n_steps):
 
         #Pick random spin
