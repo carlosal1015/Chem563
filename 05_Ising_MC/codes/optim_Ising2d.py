@@ -1,7 +1,8 @@
 import numpy as np
 from numpy.random import choice, rand, randint
-
 from numba import jit, njit
+
+######## Main Code ###########
 
 @njit
 def ising2d_mcmc(N,J,B,T, n_steps=10**7, out_freq = 10**4):
@@ -43,6 +44,7 @@ def ising2d_mcmc(N,J,B,T, n_steps=10**7, out_freq = 10**4):
 def getM(spins):
     
     return np.mean(spins)
+
 
 @njit
 def getE(spins,N,J,B):    
