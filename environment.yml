@@ -1,11 +1,15 @@
 name: chem563
 channels:
   - conda-forge
+  - pyviz
 dependencies:
   - numpy
   - matplotlib
   - pandas
   - seaborn
+  - plotly
+  - bokeh
+  - holoviz
   - scipy
   - pip
   - ipydatawidgets
