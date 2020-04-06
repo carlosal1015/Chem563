@@ -20,7 +20,7 @@ def ising2d_mcmc(N,J,B,T, n_steps=10**7, out_freq = 10**4):
         i, j = randint(N), randint(N)
 
         #Compute energy change
-        z  = spins[(i+1)%N, j] + spins[(i-1)%N, j] + spins[i, (j+1)%N] + spins[i, (j-1)%N]
+        z  = spins[(i+1)%N, j] + spins[(i-1)%N, j] + spins[i, (j+1)%N] + spins[i, (j-1)%N] # nearest neighbours of i,j
         dE = 2*spins[i,j]*(J*z + B)
 
         #Metropolis condition
@@ -33,10 +33,22 @@ def ising2d_mcmc(N,J,B,T, n_steps=10**7, out_freq = 10**4):
             
             confs.append(spins.copy())
             M.append(getM(spins))
-            E.append(getE(spins,N,J,B))
+            E.append(getE(spins,J,B))
 
     return confs, M, E
 
+
+###### Initializing function #######
+
+def initalize(N, mode='random'):
+    
+    if mode =='random'
+        spins = choice([-1,1],(N,N))
+        
+    if mode == 'ones'
+        spins = ones((N,N))
+        
+    return spins
 
 ####### Thermo Output  #######
 @njit
@@ -46,15 +58,15 @@ def getM(spins):
 
 
 @njit
-def getE(spins,N,J,B):    
+def getE(spins,J,B):    
     
     E = 0
+    N = len(spins)
     
     for i in range(N):
         for j in range(N):   
             
-            z = spins[(i+1)%N, j] + spins[(i-1)%N, j] +\
-                spins[i,(j+1)%N] +  spins[i,(j-1)%N]
+            z = spins[(i+1)%N, j] + spins[(i-1)%N, j] + spins[i,(j+1)%N] +  spins[i,(j-1)%N]
             
             E += -J*z*spins[i,j]/4 # Since we overcounted interactions 4 times divide by 4.
 

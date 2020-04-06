@@ -32,7 +32,7 @@ def ising2d_mcmc(N,J,B,T, n_steps=10**7, out_freq = 10**4):
             
             confs.append(spins.copy())
             M.append(getM(spins))
-            E.append(getE(spins,N,J,B))
+            E.append(getE(spins,J,B))
 
     return confs, M, E
 
@@ -44,9 +44,10 @@ def getM(spins):
     return np.mean(spins)
 
 
-def getE(spins,N,J,B):    
+def getE(spins,J,B):    
     
     E = 0
+    N = len(spins)
     
     for i in range(N):
         for j in range(N):   
