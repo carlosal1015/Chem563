@@ -4,6 +4,7 @@ channels:
   - pyviz
 dependencies:
   - numpy
+  - numba
   - matplotlib
   - pandas
   - seaborn
